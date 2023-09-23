@@ -2,6 +2,7 @@ import ImageFallback from "@/helpers/ImageFallback";
 import { getListPage } from "@/lib/contentParser";
 import { markdownify } from "@/lib/utils/textConverter";
 import CallToAction from "@/partials/CallToAction";
+import SeoMeta from "@/partials/SeoMeta";
 import Testimonials from "@/partials/Testimonials";
 import { Button, Feature } from "@/types";
 import { FaCheck } from "react-icons/fa/index.js";
@@ -22,6 +23,8 @@ const Home = () => {
 
   return (
     <>
+      <SeoMeta />
+
       <section className="section pt-14">
         <div className="container">
           <div className="row justify-center">
