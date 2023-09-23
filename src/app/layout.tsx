@@ -1,9 +1,10 @@
 import config from "@/config/config.json";
 import theme from "@/config/theme.json";
-import TwSizeIndicator from "@/layouts/helpers/TwSizeIndicator";
-import Footer from "@/layouts/partials/Footer";
-import Header from "@/layouts/partials/Header";
-import Providers from "@/layouts/partials/Providers";
+import TwSizeIndicator from "@/helpers/TwSizeIndicator";
+import Footer from "@/partials/Footer";
+import Header from "@/partials/Header";
+import Providers from "@/partials/Providers";
+import "@/styles/main.scss";
 
 export default function RootLayout({
   children,
@@ -25,7 +26,6 @@ export default function RootLayout({
 
         {/* favicon */}
         <link rel="shortcut icon" href={config.site.favicon} />
-
         {/* theme meta */}
         <meta name="theme-name" content="nextplate" />
         <meta name="msapplication-TileColor" content="#000000" />
