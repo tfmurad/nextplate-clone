@@ -9,7 +9,7 @@ import SeoMeta from "@/partials/SeoMeta";
 import { Author, Post } from "@/types";
 
 // remove dynamicParams
-// export const dynamicParams = false;
+export const dynamicParams = false;
 
 // generate static params
 export const generateStaticParams: () => { single?: string }[] = () => {
